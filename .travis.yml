@@ -1,0 +1,8 @@
+language: java
+jdk:
+  - openjdk21
+install:
+  - mvn install -DskipTests=true -B -V
+script:
+  - cd benchmark-ci-tools
+  - mvn clean install
